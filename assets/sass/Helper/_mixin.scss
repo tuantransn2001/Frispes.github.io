@@ -1,0 +1,30 @@
+@mixin textStyle( $fs , $fw , $lh , $cl , $t-al){
+    display: inline-block;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $cl;
+    text-align: $t-al;
+}
+@mixin button( $padding-y , $padding-x , $border-radius , $background-color , $button-boxshadow , $button-fs , $button-fw , $button-lh , $button-cl ){
+    display: inline-block;
+    padding: $padding-y $padding-x;
+    border-radius: $border-radius;
+    background-color: $background-color;
+    box-shadow: $button-boxshadow;
+    font-size: $button-fs;
+    font-weight: $button-fw;
+    line-height: $button-lh;
+    color: $button-cl;
+}
+@mixin respond( $breakpoint ){
+    @if($breakpoint == mobile){
+        @media ( max-width: 740px ){@content};
+    }
+    @if($breakpoint == tablet){
+        @media ( max-width: 1023px ){@content};
+    }
+    @if($breakpoint == pc){
+        @media ( min-width: 1024px ){@content}; 
+    }
+}

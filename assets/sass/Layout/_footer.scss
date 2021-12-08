@@ -1,0 +1,44 @@
+footer{
+    padding: 56px 0 102px;
+    background-color: $primary-120;
+    .footer{
+        .footer__logo{
+            font-family: 'Lora', serif;
+            @include textStyle( $fs-52 , $bold , $lh-52 , $white , left );
+        }
+        .footer__desc{
+            @include textStyle( $fs-16 , normal , $lh-16-2 , $gray-4 , left );
+        }
+        .footer__social__list{
+            display: flex;
+            gap: 16px;
+            .social__item{
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .social__item__link{
+                    .social__item__icon{
+                        font-size: 1.5rem;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .footer__title{
+            @include textStyle( $fs-20 , $medium , $lh-20-2 , $gray , left );
+        }
+        .footer__list{
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            .footer__item{
+                .footer__item__link{
+                    @include textStyle( $fs-16 , normal , $lh-16-2 , $white , left );
+                }
+            }
+        }
+    }
+}

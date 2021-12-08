@@ -1,0 +1,148 @@
+.review{
+    .review__heading{
+        display: flex;
+        justify-content: space-between;
+        .review__content{
+            .review__content__heading{
+                @extend .section-heading;
+                position: relative;
+            }
+            .review__content__heading::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: calc(100% + 15px);
+                width: 73px;
+                height: 2px;
+                background-color: $black-1;
+            }
+            .review__content__title{
+                @extend .section-title;
+            }
+        }
+
+        .review__control{
+            display: flex;
+            align-self: flex-end;
+            gap: 23px;
+            .review__control__button{
+                transition: all ease .25s;
+                cursor: pointer;
+            }
+            .review__control__button.prev{
+                @extend .section-control-shape;
+                .review__control__button__icon{
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -4px;
+                    color: $gray-1;
+                    transition: all ease .25s;
+                }
+            }
+            .review__control__button.next{
+                @extend .section-control-shape;
+                .review__control__button__icon{
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -4px;
+                    color: $gray-1;
+                    transition: all ease .25s;
+                }
+            }
+            .review__control__button:hover{
+                width: 90px;
+                height: 5px;
+                background-color: $second-primary;
+                .review__control__button__icon{
+                    font-size: 1.2rem;
+                    color: $second-primary;
+                }
+            }
+        }
+    }
+
+
+        .review__wrapper{
+            flex-wrap: nowrap;
+            .review__slide{
+                height: 393px;
+                padding: 47px 40px 35px;
+                background-color: $primary;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                .review__data{
+                    @include textStyle( $fs-16 , normal , $lh-16-2 , $white , left );
+                }
+                .reviewer{
+                    display: flex;
+                    gap: 16px;
+                    .reviewer__avatar__wrapper{
+                        width: 56px;
+                        height: 56px;
+                        border: 50%;
+                        overflow: hidden;
+                        .reviewer__avatar{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .reviewer__info{
+                        .reviewer__name{
+                            @include textStyle( $fs-18 , normal , $lh-18-2 , $white , left );
+                        }
+                        .reviewr__job{
+                            @include textStyle( $fs-16 , normal , $lh-16-2 , $white , left );
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+
+
+@include respond(tablet){
+    .review{
+        .review__wrapper{
+            .review__slide{
+                .review__data{
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }   
+}
+@include respond(mobile){
+    .review{
+        .review__heading{
+            .review__content{
+                .review__content__title{
+                    font-size: $fs-26;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+            .review__control{
+                display: none;
+            }
+        }
+        .review__wrapper{
+            .review__slide{
+                height: 330px;
+                padding: 30px;
+                .review__data{
+                    font-size: $fs-13;
+                }
+            }
+        }
+    }
+}

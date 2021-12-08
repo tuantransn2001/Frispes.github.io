@@ -1,0 +1,152 @@
+.introduce{
+    .introduce__heading{
+        @include textStyle( $fs-20 , $medium , $lh-20-2 , $black-1 , left );
+        position: relative;
+    }
+    .introduce__heading::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 73px;
+        background-color: $black-1;
+        top: 50%;
+        left: calc(100% + 15px);
+    }
+    .introduce__body{
+        display: flex;
+        justify-content: space-between;
+        .introduce__title{
+            flex: 6;
+            @include textStyle( $fs-52 , $bold , $lh-52 , $primary , left );
+            .introduce__title__bold{
+                color: $second-primary;
+            }
+        }
+        .introduce__desc{
+            flex: 4;
+            @include textStyle( $fs-20 , $medium , $lh-20-2 , $gray , left );
+        }
+    }
+
+    .introduce__img__body{
+        display: flex;
+        justify-content: flex-end;
+        height: 599px;
+        position: relative;
+        .introduce__img__wrappper{
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            width: 960px;
+            height: 599px;
+            .introduce__img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .introduce__form__wrapper{
+            width: 445px;
+            height: 459px;
+            padding: 42px 40px 31px;
+            background-color: $primary-120;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            form{
+                .introduce__form__title{
+                    @include textStyle( $fs-34 , $bold , $lh-34 , $white , left );
+                }
+                select{
+                    width: 365px;
+                    height: 68px;
+                    background-color: $primary-120;
+                    outline: none;
+                    border: none;
+                    background-color: $primary;
+                    padding: 34px 221px 8px 16px;
+                    -webkit-appearance: none;
+                    @include textStyle( $fs-16 , $medium , $lh-16-2 , $white , left );
+                    
+                }
+                .select__wrapper{
+                    position: relative;
+                    width: 365px;
+                    height: 68px;
+                    display: block;
+                }
+                .select__wrapper::after{
+                    content: "Location";
+                    position: absolute;
+                    top: 8px;
+                    left: 16px;
+                    @include textStyle( $fs-16 , $medium , $lh-16-2 , $gray , left );
+                }
+                .select__wrapper::before{
+                    font-family: 'Font Awesome\ 5 Free';
+                    content: '\f078';
+                    color: $white;
+                    font-size: 1rem;
+                    font-weight: 900;
+                    position: absolute;
+                    right: 22px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                }
+                .select-type__wrapper.select__wrapper::after{
+                    content: "Type";
+                }
+                .select-date__wrapper.select__wrapper::after{
+                    content: "Date";
+                }
+            }
+        }
+        .form__submit__button{
+            @include button( 12.5px , 114px , 2px , $second-primary , 0 0 0 $second-primary , $fs-18 , $bold , $lh-16-3 , $white );
+        }
+    }
+}
+// ============== Responsive ==================
+@include respond(tablet){
+    .introduce{
+        .introduce__body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .introduce__img__body{
+            .introduce__img__wrappper{
+                width: 644px;
+            }
+            .introduce__form__wrapper{
+                display: none;
+            }
+        }
+    }
+}
+@include respond(mobile){
+    .introduce{
+        .introduce__body{
+            .introduce__title{
+                font-size: $fs-26;
+                br{
+                    display: none;
+                }
+            }
+            .introduce__desc{
+                font-size: $fs-13;
+            }
+        }
+
+        .introduce__img__body{
+            height: 325px;
+            .introduce__img__wrappper{
+                width: 325px;
+                height: 325px;
+            }
+        }
+    }
+}

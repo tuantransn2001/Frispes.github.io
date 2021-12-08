@@ -1,0 +1,18 @@
+.section-title{
+    @include textStyle( $fs-40 , $bold , $lh-40 , $primary , left );
+}
+.section-desc{
+    @include textStyle( $fs-18 , $medium , $lh-18-2 , $gray-1 , left );
+}
+.section-heading{
+    @include textStyle( $fs-20 , $medium , $lh-20-2 , $black-1 , left );
+}
+.section-center-text{
+    text-align: center;
+}
+.section-control-shape{
+    width: 50px;
+    height: 4px;
+    background-color: $gray-1;
+    position: relative;
+}

@@ -1,0 +1,93 @@
+.becomeMember{
+    height: 520px;
+    background-color: $primary;
+    padding: 75px 830px 0 165px;
+    position: relative;
+    overflow: hidden;
+    .becomeMember__data{
+        .becomeMember__heading{
+            @extend .section-heading;
+            color: $white;
+            position: relative;
+        }
+        .becomeMember__heading::after{
+            content: '';
+            position: absolute;
+            width: 73px;
+            height: 2px;
+            background-color: $white;
+            top: 50%;
+            left: calc(100% + 15px);
+        }
+        .becomeMember__title{
+            @extend .section-title;
+            color: $white;
+        }
+        .becomeMember__desc{
+            @include textStyle( $fs-20 , normal , $lh-20-2 , $gray-3 , left );
+        }
+        .becomeMember__button{
+            @include button( 12.5px , 114px , 0 , $second-primary , 0 0 0 $second-primary , $fs-16 , $bold , $lh-16-2 , $white );
+        }
+    } 
+    .becomeMember__img__wrapper{
+        width: 335px;
+        height: 505px;
+        position: absolute;
+        z-index: 2;
+        right: 245px;
+        bottom: 68px;
+        .becomeMember__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .becomeMember__mask__img__wrapper{
+        width: 262px;
+        height: 262px;
+        position: absolute;
+        z-index: 1;
+        .becomeMember__mask__img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .becomeMember__mask__img__wrapper.mask-1{
+        top: 54px;
+        right: 249px;
+    }
+    .becomeMember__mask__img__wrapper.mask-2{
+        bottom: -19px;
+        right: 360px;
+    }
+}
+
+@include respond(tablet){
+    .becomeMember{
+        padding: 20px;
+        height: 300px;
+        .becomeMember__data{
+            .becomeMember__title{
+                font-size: $fs-26;
+                br{
+                    display: none;
+                }
+            }
+            .becomeMember__desc{
+                font-size: $fs-13;
+                br{
+                    display: none;
+                }
+            }
+            .becomeMember__button{
+                padding-left: 112px;
+                padding-right: 112px;
+            }
+        }
+    }
+    .becomeMember__img__wrapper,
+    .becomeMember__mask__img__wrapper{
+        display: none;
+    }
+}

@@ -1,0 +1,111 @@
+.whyfrispes{
+    .whyfrispes__list__wrapper{
+        padding: 0 30px;
+        .whyfrispes__list{
+            .whyfrispes__item{
+                display: flex;
+                .whyfrispes__icon__wrapper{
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 24px;
+                    .whyfrispes__icon{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .whyfrispes__data{
+                    display: flex;
+                    flex-direction: column;
+                    .whyfrispes__title{
+                        @include textStyle( $fs-32 , normal , $lh-32 , $primary , left );
+                    }
+                    .whyfrispes__subtitle{
+                        @include textStyle( $fs-16 , normal , $lh-16-2 , $gray-1 , left );
+                    }
+                }
+            }
+            .whyfrispes__item:not(:last-child){
+                margin-bottom: 64px;
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .whyfrispes__testimonial{
+        height: 421px;
+        padding: 54px;
+        background-color: $primary;
+        .whyfrispes__testimonial__heading{
+            @extend .section-heading;
+            color: $white;
+            position: relative;
+        }
+        .whyfrispes__testimonial__heading::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 15px);
+            width: 73px;
+            height: 2px;
+            background-color: $white;
+        }
+        .whyfrispes__testimonial__body{
+            .whyfrispes__testimonial__title{
+                @extend .section-title;
+                color: $white;
+            }
+            .whyfrispes__testimonial__desc{
+                @include textStyle( $fs-20 , $medium , $lh-20-2  , $white , left);
+            }
+        }
+    }
+}
+
+@include respond(tablet){
+    .whyfrispes{
+        .whyfrispes__list__wrapper{
+            margin-bottom: 40px;
+        }
+    }
+}
+@include respond(mobile){
+    .whyfrispes{
+        .whyfrispes__list__wrapper{
+            .whyfrispes__list{
+                .whyfrispes__item{
+                    .whyfrispes__icon__wrapper{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .whyfrispes__data{
+                        .whyfrispes__title{
+                            font-size: $fs-20;
+                        }
+                        .whyfrispes__subtitle{
+                            font-size: $fs-13;
+                        }
+                    }
+                }
+            }
+        }
+        .whyfrispes__testimonial{
+            height: 350px;
+            padding: 30px;
+            .whyfrispes__testimonial__body{
+                .whyfrispes__testimonial__title{
+                    font-size: $fs-26;
+                    br{
+                        display: none;
+                    }
+                }
+                .whyfrispes__testimonial__desc{
+                    font-size: $fs-16;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

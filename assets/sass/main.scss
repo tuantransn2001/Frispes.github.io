@@ -1,0 +1,23 @@
+@import './Base/reset';
+
+@import './Helper/mixin';
+@import './Helper/variables';
+
+@import './Helper/grid';
+
+
+@import './Component/extend';
+
+
+@import './Layout/header';
+@import './Layout/introduce';
+@import './Layout/ourSpace';
+@import './Layout/whyfrispes';
+@import './Layout/ourFacilities';
+@import './Layout/frispesGallery';
+@import './Layout/partner';
+@import './Layout/review';
+@import './Layout/FAQ';
+@import './Layout/newInsight';
+@import './Layout/becomeMember';
+@import './Layout/footer';

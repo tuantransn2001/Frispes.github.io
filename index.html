@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Frispes</title>
+</head>
+<body>
+    <div class="app grid wide-full">
+        <div class="row">
+            <div class="c-12 gutter">
+                <!-- ============= Header ============= -->
+                <header class="grid wide">
+                    <div class="row">
+                        <div class="c-12 gutter">
+                            <div class="header__wrapper mb-62">
+                                <div class="header__left">
+                                    <!-- PC -->
+                                    <a href="#" class="logo">Frispes.</a>  
+                                    <!-- Tablet -->
+                                    <i class="fas fa-stream navigation__bar__icon"></i>
+                                    <!-- Tablet navigation -->
+                                    <div class="tablet__navigation__modal">
+                                        <!-- Navigation header -->
+                                        <header class="tablet__navigation__header">
+                                            <a href="#" class="tablet__navigation__logo">Frispes</a>
+                                            <div class="tablet__navigation__close__button__wrapper">
+                                                <i class="fas fa-times tablet__navigation__close__button"></i>
+                                            </div>
+                                        </header>
+                                        <!-- Navigation Body -->
+                                        <section class="tablet__navigation__body">
+                                            <!-- List 1st -->
+                                            <ul class="tablet__navigation__list">
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-home tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Dashboard</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-chart-area tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Reports</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- List 2nd -->
+                                            <ul class="tablet__navigation__list">
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-user-friends tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Customers</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-shopping-basket tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Order</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-toolbox tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Products</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-file-alt tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Invoice</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- List 3rd -->
+                                            <ul class="tablet__navigation__list">
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-shopping-bag tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Outlet</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-users tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Employees</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-dolly tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Shipment</p>
+                                                    </a>
+                                                </li>
+                                                <li class="tablet__navigation__item">
+                                                    <a href="#" class="tablet__navigation__item__link">
+                                                        <div class="tablet__navigation__item__icon__wrapper">
+                                                            <i class="fas fa-poll tablet__navigation__item__icon"></i>
+                                                        </div>                                                        
+                                                        <p class="tablet__navigation__item__content">Marketing</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <!-- Tablet navigation modal close -->
+                                    <div class="tablet__navigation__modal__close">
+
+                                    </div>
+                                </div>
+                                <div class="header__middle">
+                                    <ul class="navigation">
+                                        <li class="subnavigation">Home</li>
+                                        <li class="subnavigation">Workspace</li>
+                                        <li class="subnavigation">Service</li>
+                                        <li class="subnavigation">Events</li>
+                                        <li class="subnavigation">Reviews</li>
+                                        <li class="subnavigation">Contact Us</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="header__right">
+                                    <div class="sign__in__wrapper">
+                                        <a href="" class="log__in">Log in</a>
+                                        <a href="" class="sign__up">Sign up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </header>
+                 <!-- ============= Introduce ============= -->
+                <section class="introduce grid wide">
+                    <!-- Heading -->
+                    <div class="row">
+                        <div class="c-12 gutter">
+                            <h1 class="introduce__heading mb-8">Introducing</h1>
+                        </div>                
+                        <div class="c-12 gutter">
+                            <div class="introduce__body m-mb-40">
+                                <h2 class="introduce__title">
+                                    <span class="introduce__title__bold">Revolutionary </span>co-working<br> 
+                                    space to realize your<br> 
+                                    innovation
+                                </h2>
+                                <p class="introduce__desc">
+                                    In frispes, we spearhead new initiatives and
+                                    provide mentorship to a new startup, and help grow their opportunities in key local,
+                                    regional and global markets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Body -->
+                    <div class="introduce__img__body mb-112">
+                        <a href="#" class="introduce__img__wrappper">
+                            <img src="./assets/img/introduce/1.png" alt="" class="introduce__img">
+                        </a>
+                        <div class="introduce__form__wrapper">
+                            <form action="">
+                                <h1 class="introduce__form__title mb-29">Find your space now</h1>
+                                <div class="select__wrapper mb-17">
+                                    <select name="location" id="location" class="location">
+                                        <option value="1">Malang, Indonesia</option>
+                                    </select>
+                                </div>
+                                <div class="select__wrapper select-type__wrapper mb-17">
+                                    <select name="type" id="type" class="type">
+                                        <option value="2">Private Office</option>
+                                    </select>
+                                </div>
+                                <div class="select__wrapper select-date__wrapper mb-22">
+                                    <select name="date" id="date" class="date">
+                                        <option value="3">9 Aug 2020</option>
+                                    </select>
+                                </div>
+                                <a href="#" class="form__submit__button">FIND MY SPACE</a>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </section>
+                <!-- ============= Our Space ============= -->
+                <section class="ourSpace grid wide swiper mySwiper">
+                    <!-- Heading -->
+                    <div class="row mb-56">
+                        <div class="c-12 gutter">
+                            <div class="ourSpace__heading">
+                                <h1 class="ourSpace__title">Our Spaces</h1>
+                                <p class="ourSpace__desc">
+                                    Our space is designed to give you a different experience.<br>
+                                    when working with your team or personally
+                                </p>
+                                <div class="outSpace__control__wrapper">
+                                    <div class="ourSpace__control__button prev prev__button">
+                                        <i class="fas fa-chevron-left ourSpace__control__button__icon"></i>
+                                    </div>
+                                    <div class="ourSpace__control__button next active">
+                                        <i class="fas fa-chevron-right ourSpace__control__button__icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider -->
+                    <!-- Wrapper -->
+                    <div class="ourSpace__slides__wrapper row swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="c-4 gutter m-c-6 swiper-slide mb-112 s-c-12">
+                            <div class="ourSpace__slide">
+                                <!-- Modal  -->
+                                <div class="ourSpace__modal">
+                                    <div class="ourSpace__modal__overlay__wrapper">
+                                        <img src="./assets/img/OurSpace/modal__overlay.png" alt="" class="ourSpace__modal__overlay">
+                                    </div>
+                                        <div class="ourSpace__modal__data">
+                                            <h1 class="ourSpace__modal__heading mb-14">Private Space</h1>
+                                            <p class="ourSpace__modal__desc">
+                                                Comfortable space, Full speed<br>
+                                                wifi, Free coffe & Snack<br>
+                                                and many more
+                                            </p>
+                                        </div>
+                                </div>
+                                <!-- img -->
+                                <div class="ourSpace__img__wrapper mb-25">                            
+                                    <img src="./assets/img/OurSpace/1.png" alt="" class="ourSpace__img">
+                                    <div class="user__selection__wrapper">
+                                        <div class="ourSpace__button">
+                                            <p class="ourSpace__button__text">Check avaibility</p>  
+                                        </div>
+                                        <div class="ourSpace__control">
+                                            <i class="fas fa-chevron-right ourSpace__control__icon"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <h1 class="ourSpace__content">Working with team</h1>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="c-4 gutter m-c-6 swiper-slide mb-112 s-c-12">
+                            <div class="ourSpace__slide active">
+                                <!-- Modal  -->
+                                <div class="ourSpace__modal">
+                                    <div class="ourSpace__modal__overlay__wrapper">
+                                        <img src="./assets/img/OurSpace/modal__overlay.png" alt="" class="ourSpace__modal__overlay">
+                                    </div>
+                                        <div class="ourSpace__modal__data">
+                                            <h1 class="ourSpace__modal__heading mb-14">Private Space</h1>
+                                            <p class="ourSpace__modal__desc">
+                                                Comfortable space, Full speed<br>
+                                                wifi, Free coffe & Snack<br>
+                                                and many more
+                                            </p>
+                                        </div>
+                                </div>
+                                <!-- img -->
+                                <div class="ourSpace__img__wrapper mb-25">                            
+                                    <img src="./assets/img/OurSpace/1.png" alt="" class="ourSpace__img">
+                                    <div class="user__selection__wrapper">
+                                        <div class="ourSpace__button">
+                                            <p class="ourSpace__button__text">Check avaibility</p>  
+                                        </div>
+                                        <div class="ourSpace__control">
+                                            <i class="fas fa-chevron-right ourSpace__control__icon"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <h1 class="ourSpace__content">Working with team</h1>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="c-4 gutter m-c-6 swiper-slide mb-112 s-c-12">
+                            <div class="ourSpace__slide">
+                                <!-- Modal  -->
+                                <div class="ourSpace__modal">
+                                    <div class="ourSpace__modal__overlay__wrapper">
+                                        <img src="./assets/img/OurSpace/modal__overlay.png" alt="" class="ourSpace__modal__overlay">
+                                    </div>
+                                        <div class="ourSpace__modal__data">
+                                            <h1 class="ourSpace__modal__heading mb-14">Private Space</h1>
+                                            <p class="ourSpace__modal__desc">
+                                                Comfortable space, Full speed<br>
+                                                wifi, Free coffe & Snack<br>
+                                                and many more
+                                            </p>
+                                        </div>
+                                </div>
+                                <!-- img -->
+                                <div class="ourSpace__img__wrapper mb-25">                            
+                                    <img src="./assets/img/OurSpace/1.png" alt="" class="ourSpace__img">
+                                    <div class="user__selection__wrapper">
+                                        <div class="ourSpace__button">
+                                            <p class="ourSpace__button__text">Check avaibility</p>  
+                                        </div>
+                                        <div class="ourSpace__control">
+                                            <i class="fas fa-chevron-right ourSpace__control__icon"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <h1 class="ourSpace__content">Working with team</h1>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="c-4 gutter m-c-6 swiper-slide mb-112 s-c-12">
+                            <div class="ourSpace__slide">
+                                <!-- Modal  -->
+                                <div class="ourSpace__modal">
+                                    <div class="ourSpace__modal__overlay__wrapper">
+                                        <img src="./assets/img/OurSpace/modal__overlay.png" alt="" class="ourSpace__modal__overlay">
+                                    </div>
+                                        <div class="ourSpace__modal__data">
+                                            <h1 class="ourSpace__modal__heading mb-14">Private Space</h1>
+                                            <p class="ourSpace__modal__desc">
+                                                Comfortable space, Full speed<br>
+                                                wifi, Free coffe & Snack<br>
+                                                and many more
+                                            </p>
+                                        </div>
+                                </div>
+                                <!-- img -->
+                                <div class="ourSpace__img__wrapper mb-25">                            
+                                    <img src="./assets/img/OurSpace/1.png" alt="" class="ourSpace__img">
+                                    <div class="user__selection__wrapper">
+                                        <div class="ourSpace__button">
+                                            <p class="ourSpace__button__text">Check avaibility</p>  
+                                        </div>
+                                        <div class="ourSpace__control">
+                                            <i class="fas fa-chevron-right ourSpace__control__icon"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <h1 class="ourSpace__content">Working with team</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============= whyfrispes ============= -->
+                <section class="whyfrispes grid wide">
+                    <div class="row mb-112">
+                        <div class="c-6 gutte whyfrispes__list__wrapper m-c-12 ">
+                           <ul class="whyfrispes__list">
+                               <!-- Item 1 -->
+                               <li class="whyfrispes__item">
+                                   <div class="whyfrispes__icon__wrapper">
+                                       <img src="./assets/img/whyfrispes/1.png" alt="" class="whyfrispes__icon">
+                                   </div>
+                                   <div class="whyfrispes__data">
+                                        <p class="whyfrispes__title">500+</p>
+                                        <p class="whyfrispes__subtitle">Meeting rooms</p>
+                                   </div>
+                               </li>
+                               <!-- Item 2 -->
+                               <li class="whyfrispes__item">
+                                <div class="whyfrispes__icon__wrapper">
+                                    <img src="./assets/img/whyfrispes/2.png" alt="" class="whyfrispes__icon">
+                                </div>
+                                <div class="whyfrispes__data">
+                                     <p class="whyfrispes__title">60+</p>
+                                     <p class="whyfrispes__subtitle">Countries</p>
+                                </div>
+                            </li>
+                            <!-- Item 3 -->
+                            <li class="whyfrispes__item">
+                                <div class="whyfrispes__icon__wrapper">
+                                    <img src="./assets/img/whyfrispes/3.png" alt="" class="whyfrispes__icon">
+                                </div>
+                                <div class="whyfrispes__data">
+                                     <p class="whyfrispes__title">5K+</p>
+                                     <p class="whyfrispes__subtitle">Startup mentors</p>
+                                </div>
+                            </li>
+                           </ul> 
+        
+                           <ul class="whyfrispes__list">
+                            <!-- Item 1 -->
+                            <li class="whyfrispes__item">
+                                <div class="whyfrispes__icon__wrapper">
+                                    <img src="./assets/img/whyfrispes/1.png" alt="" class="whyfrispes__icon">
+                                </div>
+                                <div class="whyfrispes__data">
+                                     <p class="whyfrispes__title">500+</p>
+                                     <p class="whyfrispes__subtitle">Meeting rooms</p>
+                                </div>
+                            </li>
+                            <!-- Item 2 -->
+                            <li class="whyfrispes__item">
+                             <div class="whyfrispes__icon__wrapper">
+                                 <img src="./assets/img/whyfrispes/2.png" alt="" class="whyfrispes__icon">
+                             </div>
+                             <div class="whyfrispes__data">
+                                  <p class="whyfrispes__title">60+</p>
+                                  <p class="whyfrispes__subtitle">Countries</p>
+                             </div>
+                         </li>
+                         <!-- Item 3 -->
+                         <li class="whyfrispes__item">
+                             <div class="whyfrispes__icon__wrapper">
+                                 <img src="./assets/img/whyfrispes/3.png" alt="" class="whyfrispes__icon">
+                             </div>
+                             <div class="whyfrispes__data">
+                                  <p class="whyfrispes__title">5K+</p>
+                                  <p class="whyfrispes__subtitle">Startup mentors</p>
+                             </div>
+                         </li>
+                        </ul> 
+                        </div>
+                        <div class="c-6 gutter m-c-12">
+                            <div class="whyfrispes__testimonial">
+                                <h1 class="whyfrispes__testimonial__heading mb-22">Why Frispes</h1>
+                                <div class="whyfrispes__testimonial__body">
+                                    <h2 class="whyfrispes__testimonial__title mb-24">
+                                        We revolutionize your<br>
+                                        workspace
+                                    </h2>
+                                    <p class="whyfrispes__testimonial__desc">
+                                        With a decade of insights and expertise, we're<br>
+                                        decided to reimagine co-working space, designed<br> 
+                                        to help a new startup grow up and realize their<br> 
+                                        ideas so they can give a positive impacts on<br>
+                                        many people
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============= Our Facilities ============= -->
+                <section class="ourFacilities grid wide">
+                    <div class="row">
+                        <div class="c-12 gutter">
+                            <h1 class="ourFacilities__content__heading mb-8">Our Facilities</h1><br>
+                            <h2 class="ourFacilities__content__title mb-56">
+                                All facilities are designed to<br> 
+                                meet all your needs
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row mb-112">
+                        <div class="c-12 gutter">
+                            <div class="ourFacilities__slider">
+                                <div class="ourFacilities__process">
+                                    <div class="ourFacilities__processBar">
+                                        <div class="ourFacilities__processPercent"></div>
+                                    </div>
+        
+                                    <ul class="ourFacilities__dots">
+                                        <li class="ourFacilities__dot">
+                                            Spacious parking area
+                                        </li>
+                                        <li class="ourFacilities__dot">
+                                            Comfortable spaces
+                                        </li>
+                                        <li class="ourFacilities__dot active">
+                                            Cozy cafe
+                                        </li>
+                                        <li class="ourFacilities__dot">
+                                            Child playground
+                                        </li>
+                                        <li class="ourFacilities__dot">
+                                            Outdoor spaces
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="ourFacilities__slides__wrapper">
+                                    <div class="ourFacilities__slide">
+                                        <a href="#" class="ourFacilities__slide__img__wrapper">
+                                            <img src="./assets/img/ourFacilities/1.png" alt="" class="ourFacilities__slide__img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============= Frispes gallery ============= -->
+                <section class="frispesGallery grid wide swiper mySwiper">
+                    <div class="row">
+                        <div class="c-12 gutter">
+                            <div class="frispesGallery__slides__data mb-62">
+                                <h1 class="frispesGallery__slides__heading mb-8">Frispes gallery</h1><br>
+                                <h2 class="frispesGallery__slides__title mb-39">
+                                    Immersive beautiful<br>
+                                    co-working space gallery<br>
+                                </h2>
+                                <div class="frispesGallery__slides__control">
+                                    <div class="frispesGallery__slides__control__button prev">
+                                        <i class="fas fa-chevron-left frispesGallery__slides__control__button__icon"></i>
+                                    </div>
+                                    <div class="frispesGallery__slides__control__button next active">
+                                        <i class="fas fa-chevron-right frispesGallery__slides__control__button__icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row frispesGallery__slide__wrapper swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="c-4 gutter swiper-slide m-c-6 s-c-12">
+                            <a href="#" class="frispesGallery__slide mb-112">
+                                <img src="./assets/img/frispesGallery/1.jpg" alt="" class="frispesGallery__slide__img">
+                            </a>    
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="c-4 gutter swiper-slide m-c-6 s-c-12">
+                            <a href="#" class="frispesGallery__slide mb-112">
+                                <img src="./assets/img/frispesGallery/1.jpg" alt="" class="frispesGallery__slide__img">
+                            </a>    
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="c-4 gutter swiper-slide m-c-6 s-c-12">
+                            <a href="#" class="frispesGallery__slide mb-112">
+                                <img src="./assets/img/frispesGallery/1.jpg" alt="" class="frispesGallery__slide__img">
+                            </a>    
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="c-4 gutter swiper-slide m-c-6 s-c-12">
+                            <a href="#" class="frispesGallery__slide mb-112">
+                                <img src="./assets/img/frispesGallery/1.jpg" alt="" class="frispesGallery__slide__img">
+                            </a>    
+                        </div>
+                    </div>
+                </section>
+                <!-- ============= Partner ============= -->
+                <section class="partner mb-112">
+                    <div class="partner__content">
+                        <h1 class="partner__title mb-24">
+                            Who uses Frispes?
+                        </h1><br>
+                        <p class="partner__desc mb-56">
+                            Big brands, small bussiness, new startuo and inividuals
+                        </p>
+                        <a href="#" class="partner__logo__wrapper">
+                            <img src="./assets/img/partNer/1.png" alt="" class="partner__logo">
+                        </a>
+                    </div>
+                   
+                </section>
+                <!-- ============= Review ============= -->
+                <section class="review grid wide swiper mySwiper">
+                                <div class="row">
+                                    <div class="c-12 gutter"> 
+                                        <div class="review__heading mb-56">
+                                            <div class="review__content">
+                                                <h1 class="review__content__heading mb-8">Reviews</h1><br>
+                                                <h2 class="review__content__title">
+                                                    What our customers<br>
+                                                    are saying
+            
+                                                </h2>
+                                            </div>
+            
+                                            <div class="review__control">
+                                                <div class="review__control__button prev">
+                                                    <i class="fas fa-chevron-left review__control__button__icon"></i>
+                                                </div>
+                                                <div class="review__control__button next active">
+                                                    <i class="fas fa-chevron-right review__control__button__icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row review__wrapper swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="c-6 gutter swiper-slide mb-112 m-c-8 s-c-12">
+                                        <div class="review__slide">
+                                            <p class="review__data">
+                                                Our team has been working at frispes for almost<br> 
+                                                2 months because our office still closed. During<br> 
+                                                working at frispes, we feel a new experience,<br> 
+                                                we can feel working with a beautiful, modern, and<br> 
+                                                comfortable space. And cozy cafe with high-speed<br> 
+                                                internet  in there. Thank you for frispes and team.
+                                            </p>
+                                            <div class="reviewer">
+                                                <div class="reviewer__avatar__wrapper">
+                                                    <img src="./assets/img/review/1.png" alt="" class="review__avatar">
+                                                </div>
+                                                <div class="reviewer__info">
+                                                    <h1 class="reviewer__name mb-4">Pedro Ibanez</h1><br>
+                                                    <h2 class="reviewr__job">UI Designer at Google</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="c-6 gutter swiper-slide mb-112 m-c-8 s-c-12">
+                                        <div class="review__slide">
+                                            <p class="review__data">
+                                                The high-speed internet at frispes was so amazing. I<br> 
+                                                can get best experience when running video call<br> 
+                                                with my clients. Frispes has spacious and safe<br> 
+                                                parking area, that’s what i need because i used to<br> 
+                                                work as freelancer for a long time.
+                                            </p>
+                                            <div class="reviewer">
+                                                <div class="reviewer__avatar__wrapper">
+                                                    <img src="./assets/img/review/2.png" alt="" class="review__avatar">
+                                                </div>
+                                                <div class="reviewer__info">
+                                                    <h1 class="reviewer__name mb-4">Raymond Thual</h1><br>
+                                                    <h2 class="reviewr__job">Professional Freelancer</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="c-6 gutter swiper-slide mb-112 m-c-8 s-c-12">
+                                        <div class="review__slide">
+                                            <p class="review__data">
+                                                Just three words : Frispes is Awesome!
+                                            <div class="reviewer">
+                                                <div class="reviewer__avatar__wrapper">
+                                                    <img src="./assets/img/review/3.png" alt="" class="review__avatar">
+                                                </div>
+                                                <div class="reviewer__info">
+                                                    <h1 class="reviewer__name mb-4">Yuli Berlian</h1><br>
+                                                    <h2 class="reviewr__job">IOS Dev at Tokopedia</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </section>
+                <!-- ============= FAQ ============= -->
+                <section class="FAQ mb-112">
+                    <div class="FAQ__heading mb-51">
+                        <h1 class="FAQ__title">
+                            Find the answers to anything<br>
+                            you need in our Help Center
+                        </h1>
+                    </div>
+                    <div class="FAQ__questions__wraper mb-64">
+                        <ul class="FAQ__list">
+                            <!-- FAQ 1 -->
+                            <li class="FAQ__item m-mb-40">
+                                <a href="#" class="FAQ__item__link">
+                                    How do I know if a space is available?
+                                </a>
+                                <a href="#" class="FAQ__button">
+                                    <i class="fas fa-chevron-down FAQ__button__icon"></i>
+                                </a>
+                            </li>
+                            <!-- FAQ 2 -->
+                            <li class="FAQ__item m-mb-40">
+                                <a href="#" class="FAQ__item__link">
+                                    How do I know if a space is available?
+                                </a>
+                                <a href="#" class="FAQ__button">
+                                    <i class="fas fa-chevron-down FAQ__button__icon"></i>
+                                </a>
+                            </li>
+                            <!-- FAQ 3 -->
+                            <li class="FAQ__item m-mb-40">
+                                <a href="#" class="FAQ__item__link">
+                                    How do I know if a space is available?
+                                </a>
+                                <a href="#" class="FAQ__button">
+                                    <i class="fas fa-chevron-down FAQ__button__icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="FAQ__more">
+                       <h1 class="more__question__content">More question</h1>
+                       <div class="more__question__icon__wrapper">
+                            <i class="fas fa-chevron-right more__question__icon"></i>
+                       </div>
+                    </a>
+                </section>
+                <!-- ============= New Insight ============= -->
+                <section class="newInsight grid wide">
+                    <div class="row mb-56">
+                        <div class="c-12 gutter">
+                            <div class="newInsight__content">
+                                <h1 class="newInsight__title">News, events and insights for you</h1>
+                                <a href="#" class="newInsihgt__more">
+                                    <h1 class="newInsight__mpre__content">See more</h1>
+                                    <div class="newInsight__icon__wrapper">
+                                        <i class="fas fa-chevron-right newInsight__icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-96">
+                        <!-- Item 1 -->
+                        <div class="c-8 gutter m-c-12">
+                            <a href="#" class="newInsight__gird__1 mb-30">
+                                <div class="newInsight__grid__img__wrapper">
+                                    <img src="./assets/img/newInsight/1.png" alt="" class="newInsight__grid__img">
+                                </div>
+                                <div class="newInsight__grid__data">
+                                    <h1 class="newInsight__time mb-24">Google I / O 2020<br> news update</h1>
+                                    <p class="newInsight__desc mb-16">
+                                        Out of concern for the health and safety of<br>
+                                        our developers, employees, and local<br>
+                                        communities — and in line with recent ...
+                                    </p>
+                                    <div class="newInsight__speaker">
+                                        <div class="newInsight__speaker__avatar__wrapper">
+                                            <img src="./assets/img/newInsight/speaker/1.png" alt="" class="newInsight__speaker__avatar">
+                                        </div>
+                                        <div class="newInsight__speaker__info">
+                                            <h1 class="newInsight__speaker__name mb-8">Sundar pichai</h1>
+                                            <h2 class="newInsight__speaker__job">CEO at Google</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="c-4 gutter m-c-6 s-c-12">
+                            <a href="#" class="newInsight__gird__4 mb-30">
+                                <div class="newInsight__gird__img__wrapper">
+                                    <img src="./assets/img/newInsight/2.png" alt="" class="newInsight__gird__img">
+                                </div>
+                                <div class="newInsight__gird__data">
+                                    <h1 class="newInsight__title mb-4">Minimal workspace for inspirations</h1>
+                                    <p class="newInsight__author">Anthony Masional</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="c-4 gutter m-c-6 s-c-12">
+                            <a href="#" class="newInsight__gird__4 mb-30">
+                                <div class="newInsight__gird__img__wrapper">
+                                    <img src="./assets/img/newInsight/3.png" alt="" class="newInsight__gird__img">
+                                </div>
+                                <div class="newInsight__gird__data">
+                                    <h1 class="newInsight__title mb-4">Does productivity increase when working remotely ? </h1>
+                                    <p class="newInsight__author">Franck Martin</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="c-4 gutter m-c-6 s-c-12">
+                            <a href="#" class="newInsight__gird__4 mb-30">
+                                <div class="newInsight__gird__img__wrapper">
+                                    <img src="./assets/img/newInsight/4.png" alt="" class="newInsight__gird__img">
+                                </div>
+                                <div class="newInsight__gird__data">
+                                    <h1 class="newInsight__title mb-4">Morning routine to boost your mood</h1>
+                                    <p class="newInsight__author">Elizabeth swan</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="c-4 gutter m-c-6 s-c-12">
+                            <a href="#" class="newInsight__gird__4 mb-30">
+                                <div class="newInsight__gird__img__wrapper">
+                                    <img src="./assets/img/newInsight/5.png" alt="" class="newInsight__gird__img">
+                                </div>
+                                <div class="newInsight__gird__data">
+                                    <h1 class="newInsight__title mb-4">5+ tips to find comfortable co-working space</h1>
+                                    <p class="newInsight__author">Mykola Ilschenko</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============= Become Member ============= -->
+                <section class="becomeMember">
+                    <div class="becomeMember__data">
+                        <h1 class="becomeMember__heading mb-22">Became a member</h1><br>
+                        <h2 class="becomeMember__title mb-16">
+                            Ready to try different<br>
+                            work experience now?
+                        </h2><br>
+                        <p class="becomeMember__desc mb-33">
+                            Get the best working experience that you never<br>
+                            feel before
+                        </p>
+                        <a href="#" class="becomeMember__button">SIGN UP NOW</a>
+                    </div>
+                    <div class="becomeMember__img__wrapper">
+                        <img src="./assets/img/becomeMember/smiling-man.png" alt="" class="becomeMember__img">
+                    </div>
+                    <div class="becomeMember__mask__img__wrapper mask-1">
+                        <img src="./assets/img/becomeMember/mask-1.png" alt="" class="becomeMember__mask__img">
+                    </div>
+                    <div class="becomeMember__mask__img__wrapper mask-2">
+                        <img src="./assets/img/becomeMember/mask-2.png" alt="" class="becomeMember__mask__img">
+                    </div>
+                </section>
+                <!-- ============= Footer ============= -->
+                <footer>
+                    <div class="footer grid wide">
+                        <div class="row no-gutter">
+                            <div class="c-4 mt-gutter m-c-6 m-mb-40 s-c-12">
+                                <a href="#" class="footer__logo mb-16">Frispes</a>
+                                <p class="footer__desc mb-24">
+                                    We offer comfortable spaces, cozy<br> 
+                                    cafe, high-speed internet, spacious<br> 
+                                    parking area and many more for<br> 
+                                    your best workspaces and meetings
+                                </p>
+                                <ul class="footer__social__list">
+                                    <li class="social__item">
+                                        <a href="#" class="social__item__link">
+                                            <i class="fab fa-instagram-square social__item__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__item__link">
+                                            <i class="fab fa-youtube social__item__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__item__link">
+                                            <i class="fab fa-facebook-square social__item__icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-2 mt-gutter m-c-6 m-mb-40 s-c-12">
+                                <h1 class="footer__title mb-24">Spaces</h1>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Co-working spaces</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Meeting rooms</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Event spaces</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Child playground</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Cafe & resto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-2 mt-gutter m-c-6 m-mb-40 s-c-12">
+                                <h1 class="footer__title mb-24">Company</h1>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">About Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Pricing</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Careers</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Press</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-2 mt-gutter m-c-6 m-mb-40 s-c-12">
+                                <h1 class="footer__title mb-24">Support</h1>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">FAQs</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Privacy Policy</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-2 mt-gutter m-c-6 m-mb-40 s-c-12">
+                                <h1 class="footer__title mb-24">Contact Us</h1>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">E.  Hello@frispes.com</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">
+                                            A.  Jalan Jayakatwang  No.301<br>
+                                            Ngasem, Kediri</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item__link">P.  (+62) 82334670000</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- My Js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+

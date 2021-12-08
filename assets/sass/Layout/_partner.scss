@@ -1,0 +1,38 @@
+.partner{
+    .partner__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .partner__title{
+            @extend .section-title;
+        }
+        .partner__desc{
+            @extend .section-desc;
+        }
+    }
+}
+
+@include respond(tablet){
+    .partner{
+        .partner__logo__wrapper{
+            width: 674px;
+            overflow: scroll;
+        }
+    }
+}
+
+@include respond(mobile){
+    .partner{
+        .partner__content{
+            .partner__title{
+                font-size: $fs-26;
+            }
+            .partner__desc{
+                font-size: $fs-13;
+            }
+            .partner__logo__wrapper{
+                max-width: 325px;
+            }
+        }
+    }
+}
